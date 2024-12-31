@@ -22,7 +22,6 @@ public class SearchController {
 
     @GetMapping("/search")
     public ResponseEntity<List<Product>> searchByProductName(@RequestParam("productName") String productName){
-        System.out.println(productName);
        return new ResponseEntity<>(searchService.searchByProductName(productName), HttpStatusCode.valueOf(200));
 
     }

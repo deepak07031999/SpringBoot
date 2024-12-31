@@ -1,6 +1,5 @@
 package org.deepak.springboot.repository;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
 import org.deepak.springboot.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

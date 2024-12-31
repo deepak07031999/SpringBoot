@@ -1,20 +1,22 @@
 package org.deepak.springboot.controller;
 
 import org.deepak.springboot.model.User;
-import org.deepak.springboot.service.LoginService;
+import org.deepak.springboot.service.SignupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class LoginController {
+@RequestMapping("/api")
+public class SignupController {
 
     @Autowired
-    LoginService loginService;
+    SignupService signupService;
 
-    @PostMapping("/login")
-    public String login(@RequestBody User user){
-        return loginService.authenticate(user);
+    @PostMapping("/signup")
+    public User register(@RequestBody User user){
+        return signupService.register(user);
     }
 }

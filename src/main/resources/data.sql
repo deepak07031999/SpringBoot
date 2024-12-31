@@ -9,3 +9,6 @@ VALUES ('Tata Nexon', 'A compact SUV with excellent safety features and performa
         'Cars', '2024-04-01', true, 30),
        ('Honda City', 'A premium sedan with a sleek design and advanced safety features.', 'Honda', 1100000.00, 'Cars',
         '2024-05-01', true, 60);
+
+INSERT INTO "user" (username, password)
+VALUES ('user','$2y$10$UfHcWv80y8CRXm/hRxn4tOnaHluQFzy.0CoBnA/dXiaVE98rFVTo.'),('u','$2y$10$pyG7vHz8Wb/Ywr1F8rZo9uoZJcsh4XoEFK4M/TkK7vvbxN49oNDk2');
